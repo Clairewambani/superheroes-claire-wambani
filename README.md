@@ -2,8 +2,7 @@
 
 ## Overview
 
-This API tracks heroes and their superpowers. 
-It supports CRUD operations for `Hero`, `Power`, and `HeroPower` models and provides endpoints to manage these entities.
+This API tracks heroes and their superpowers. It supports CRUD operations for `Hero`, `Power`, and `HeroPower` models and provides endpoints to manage these entities.
 
 ## Models
 
@@ -73,6 +72,9 @@ Creates a new HeroPower association. The strength must be one of `Strong`, `Weak
 
 Import the provided Postman collection (`challenge-2-superheroes.postman_collection.json`) into Postman to test the endpoints.
 
+## Authors
+Claire Wambani
+
 ## License
 
-This project is licensed under Claire Wambani.
+This project is licensed under MIT.
