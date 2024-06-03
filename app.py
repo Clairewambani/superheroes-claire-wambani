@@ -2,8 +2,15 @@ from flask import Flask, jsonify, request, render_template
 from flask_migrate import Migrate
 from models import db, Hero, Power, HeroPower
 import markdown2
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
+app.config['ENV'] = os.getenv('FLASK_ENV')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 @app.route('/')
 def index():
